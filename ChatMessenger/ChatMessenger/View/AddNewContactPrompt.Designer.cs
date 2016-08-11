@@ -38,21 +38,22 @@
             // 
             // generalTableLayoutPanel
             // 
+            this.generalTableLayoutPanel.AutoSize = true;
             this.generalTableLayoutPanel.ColumnCount = 1;
             this.generalTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.generalTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.generalTableLayoutPanel.Controls.Add(this.buttonBarTableLayoutPanel, 0, 1);
             this.generalTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.generalTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.generalTableLayoutPanel.Name = "generalTableLayoutPanel";
             this.generalTableLayoutPanel.RowCount = 2;
-            this.generalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.generalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.generalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.generalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.generalTableLayoutPanel.Size = new System.Drawing.Size(284, 261);
             this.generalTableLayoutPanel.TabIndex = 0;
             // 
             // buttonBarTableLayoutPanel
             // 
+            this.buttonBarTableLayoutPanel.AutoSize = true;
             this.buttonBarTableLayoutPanel.ColumnCount = 3;
             this.buttonBarTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.buttonBarTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -60,12 +61,12 @@
             this.buttonBarTableLayoutPanel.Controls.Add(this.okButton, 1, 0);
             this.buttonBarTableLayoutPanel.Controls.Add(this.cancelButton, 2, 0);
             this.buttonBarTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonBarTableLayoutPanel.Location = new System.Drawing.Point(0, 130);
+            this.buttonBarTableLayoutPanel.Location = new System.Drawing.Point(0, 232);
             this.buttonBarTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             this.buttonBarTableLayoutPanel.Name = "buttonBarTableLayoutPanel";
             this.buttonBarTableLayoutPanel.RowCount = 1;
-            this.buttonBarTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.buttonBarTableLayoutPanel.Size = new System.Drawing.Size(284, 131);
+            this.buttonBarTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.buttonBarTableLayoutPanel.Size = new System.Drawing.Size(284, 29);
             this.buttonBarTableLayoutPanel.TabIndex = 0;
             // 
             // okButton
@@ -97,9 +98,11 @@
             this.Name = "AddNewContactPrompt";
             this.Text = "Add New Contact";
             this.generalTableLayoutPanel.ResumeLayout(false);
+            this.generalTableLayoutPanel.PerformLayout();
             this.buttonBarTableLayoutPanel.ResumeLayout(false);
             this.buttonBarTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
