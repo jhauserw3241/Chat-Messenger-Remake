@@ -8,8 +8,9 @@ namespace ClientTests
 {
     public class BaseClientPresenterCreated
     {
-        protected ClientViewModel ViewModel;
         protected ClientPresenter Presenter;
+        protected ClientView View;
+        protected ClientViewModel ViewModel;
 
         [SetUp]
         public void SetUp()
@@ -20,7 +21,7 @@ namespace ClientTests
 
             Presenter = new ClientPresenter(
                 ViewModel,
-                new ClientView()
+                View
                 );
         }
 
@@ -30,6 +31,7 @@ namespace ClientTests
 
         protected void Init()
         {
+            View = new ClientView();
             ViewModel = new ClientViewModel();
         }
 
@@ -42,9 +44,15 @@ namespace ClientTests
     public class WhenPresenterIsCreated : BaseClientPresenterCreated
     {
         [TestCase]
-        public void set_view_model_to_null()
+        public void view_model_should_set_list_of_contacts_to_empty_list()
         {
-            Assert.IsNull(Presenter._viewModel);
+            Assert.IsEmpty(ViewModel.Contacts);
+        }
+
+        [TestCase]
+        public void view_model_should_set_list_of_conversations_to_empty_list()
+        {
+            Assert.IsEmpty(ViewModel.Conversations);
         }
     }
 }
