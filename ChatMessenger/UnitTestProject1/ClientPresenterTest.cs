@@ -71,4 +71,7 @@ namespace ClientTests
     {
     }
     #endregion
+
+    #region User Called Events
+    #endregion
 }
