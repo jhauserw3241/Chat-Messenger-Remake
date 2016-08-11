@@ -71,6 +71,7 @@
             // 
             // okButton
             // 
+            this.okButton.AutoSize = true;
             this.okButton.Location = new System.Drawing.Point(97, 3);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
@@ -80,6 +81,7 @@
             // 
             // cancelButton
             // 
+            this.cancelButton.AutoSize = true;
             this.cancelButton.Location = new System.Drawing.Point(191, 3);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
@@ -97,6 +99,7 @@
             this.Text = "Add New Contact";
             this.generalTableLayoutPanel.ResumeLayout(false);
             this.buttonBarTableLayoutPanel.ResumeLayout(false);
+            this.buttonBarTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
