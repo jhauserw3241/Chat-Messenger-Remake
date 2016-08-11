@@ -54,9 +54,9 @@
             // buttonBarTableLayoutPanel
             // 
             this.buttonBarTableLayoutPanel.ColumnCount = 3;
-            this.buttonBarTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.buttonBarTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.buttonBarTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.buttonBarTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.buttonBarTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.buttonBarTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.buttonBarTableLayoutPanel.Controls.Add(this.okButton, 1, 0);
             this.buttonBarTableLayoutPanel.Controls.Add(this.cancelButton, 2, 0);
             this.buttonBarTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -64,15 +64,14 @@
             this.buttonBarTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             this.buttonBarTableLayoutPanel.Name = "buttonBarTableLayoutPanel";
             this.buttonBarTableLayoutPanel.RowCount = 1;
-            this.buttonBarTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.buttonBarTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.buttonBarTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.buttonBarTableLayoutPanel.Size = new System.Drawing.Size(284, 131);
             this.buttonBarTableLayoutPanel.TabIndex = 0;
             // 
             // okButton
             // 
             this.okButton.AutoSize = true;
-            this.okButton.Location = new System.Drawing.Point(97, 3);
+            this.okButton.Location = new System.Drawing.Point(125, 3);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 0;
@@ -82,7 +81,7 @@
             // cancelButton
             // 
             this.cancelButton.AutoSize = true;
-            this.cancelButton.Location = new System.Drawing.Point(191, 3);
+            this.cancelButton.Location = new System.Drawing.Point(206, 3);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 1;
