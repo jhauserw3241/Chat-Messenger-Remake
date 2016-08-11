@@ -6,6 +6,7 @@ using ChatMessenger;
 
 namespace ClientTests
 {
+    #region Setup Client Class
     public class BaseClientPresenterCreated
     {
         protected ClientPresenter Presenter;
@@ -13,7 +14,7 @@ namespace ClientTests
         protected ClientViewModel ViewModel;
 
         [SetUp]
-        public void SetUp()
+        public virtual void SetUp()
         {
             Init();
             BuildMocks();
@@ -25,17 +26,17 @@ namespace ClientTests
                 );
         }
 
-        protected void BuildMocks()
+        protected virtual void BuildMocks()
         {
         }
 
-        protected void Init()
+        protected virtual void Init()
         {
             View = new ClientView();
             ViewModel = new ClientViewModel();
         }
 
-        protected void StubMethods()
+        protected virtual void StubMethods()
         {
         }
     }
@@ -55,4 +56,19 @@ namespace ClientTests
             Assert.IsEmpty(ViewModel.Conversations);
         }
     }
+
+    public class BaseClientPresenterIsLoaded : BaseClientPresenterCreated
+    {
+        [SetUp]
+        public override void SetUp()
+        {
+            Presenter.Load();
+        }
+    }
+
+    [TestFixture]
+    public class WhenClientPresenterIsLoaded : BaseClientPresenterIsLoaded
+    {
+    }
+    #endregion
 }
