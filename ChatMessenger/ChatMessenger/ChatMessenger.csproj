@@ -80,6 +80,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\IClientView.cs" />
+    <Compile Include="View\LoginPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginPrompt.Designer.cs">
+      <DependentUpon>LoginPrompt.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\AddNewContactPrompt.resx">
       <DependentUpon>AddNewContactPrompt.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\LoginPrompt.resx">
+      <DependentUpon>LoginPrompt.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
