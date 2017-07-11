@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatServer.ViewModel
+namespace ChatServer.Data
 {
     public abstract class Person
     {
