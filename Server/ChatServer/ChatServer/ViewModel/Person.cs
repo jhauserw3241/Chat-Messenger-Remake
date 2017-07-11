@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace ChatServer.ViewModel
 {
-    public class Person
+    public abstract class Person
     {
         public string Username { get; set; }
         public long Id { get; set; }
+
+        public virtual string ToJson()
+        {
+            return "{ Username: " + Username + ", Id: " + Id + " }";
+        }
     }
 }
